@@ -1,0 +1,103 @@
+/* =========================
+   IMPORTACIÓN DE FUENTE
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&#39;);
+
+/* =========================
+   VARIABLES (ROOT)
+========================= */
+:root {
+
+    /* COLORES */
+    --color-primary: #7d7d00;
+    --color-secondary: #88b8e2;
+    --color-success: #eabb14;
+
+    --color-dark: #343a40;
+    --color-light: #f8f9fa;
+
+    /* FUENTES */
+    --font-primary: "Montserrat", sans-serif;
+
+    /* TAMAÑOS */
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.5rem;
+    --text-xl: 2rem;
+
+    /* PESOS */
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/* =========================
+   RESET
+========================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   BASE
+========================= */
+body {
+    font-family: var(--font-primary);
+    font-size: var(--text-base);
+    line-height: 1.5;
+    background: var(--color-light);
+    color: var(--color-dark);
+}
+
+/* =========================
+   TIPOGRAFÍA
+========================= */
+h1 {
+    font-size: var(--text-xl);
+    font-weight: var(--fw-bold);
+}
+
+p {
+    font-size: var(--text-base);
+    font-weight: var(--fw-regular);
+}
+
+/* =========================
+   MEDIA
+========================= */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+/* =========================
+   BOTONES
+========================= */
+button {
+    cursor: pointer;
+    background: var(--color-success);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: var(--fw-bold);
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: var(--color-primary);
+}
+
+/* =========================
+   CONTENEDORES
